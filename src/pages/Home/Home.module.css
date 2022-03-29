@@ -1,0 +1,9 @@
+.main{
+    height: calc(80vh - 4em);
+    display: flex;
+    padding: 3em;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap;
+}
