@@ -49,8 +49,8 @@
 }
 
 .todoSection {
-  max-height: 25rem;
-  max-width: 25rem;
+  width: 25rem;
+  height: 25rem;
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -78,8 +78,12 @@
   .userTodo{
     justify-content:flex-start;
   }
+  .todoContainer{
+    gap: 1.5rem;
+  }
   .todoSection {
-    max-height: 25rem;
+    width: 18rem;
+    height: 20rem;
   }
   .todoSection h1 {
     font-size: 1.5rem;
@@ -91,6 +95,7 @@
     flex-wrap: wrap;
   }
   .todoSection {
+    width: 15rem;
     height: 15rem;
   }
 }
