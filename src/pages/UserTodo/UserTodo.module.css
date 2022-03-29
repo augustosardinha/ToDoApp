@@ -1,0 +1,96 @@
+.userTodo {
+  height: calc(80vh - 4em);
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding: 3rem;
+}
+
+.inputTodo {
+  display: flex;
+}
+
+.inputTodo input {
+  all:unset;
+  width: 100%;
+  padding: 1rem;
+  font-size:1.5rem;
+  border-radius: 0.5rem;
+  color: #61dbfb;
+  background: #0a0a13;
+}
+.inputTodo input::placeholder{
+  color: #61dbfb;
+}
+
+.inputTodo button {
+  all: unset;
+  text-align: center;
+  font-weight: 700 ;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: #0a0a13;
+  background-color: #61dbfb;
+  transition: 0.5s;
+}
+.inputTodo button:hover {
+ background-color: #2ed5ff;
+}
+
+.todoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.todoSection {
+  max-height: 25rem;
+  max-width: 25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: #0a0a13;
+}
+
+.todoSection h1 {
+  color: #61dbfb;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.todoContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #133a42 transparent;
+}
+
+@media screen and (max-width: 1440px) {
+  .userTodo{
+    justify-content:flex-start;
+  }
+  .todoSection {
+    max-height: 25rem;
+  }
+  .todoSection h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .todoContainer{
+    flex-wrap: wrap;
+  }
+  .todoSection {
+    height: 15rem;
+  }
+}
